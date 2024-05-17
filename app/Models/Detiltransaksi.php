@@ -18,6 +18,6 @@ class Detiltransaksi extends Model
 
     public function produk():BelongsTo
     {
-        return $this->belongsTo(Transaksi::class);
+        return $this->belongsTo(produk::class);
     }
 }

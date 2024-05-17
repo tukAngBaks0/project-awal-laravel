@@ -62,7 +62,7 @@ class Transaksis extends Component
         $detiltransaksi->delete();
 
         //update total
-        $detiltransaksi = DEtiltransaksi::select('*')->where('id_transaksi', '=', $this->id_transaksi)->get();
+        $detiltransaksi = Detiltransaksi::select('*')->where('id_transaksi', '=', $this->id_transaksi)->get();
         $total = 0;
         foreach ($detiltransaksi as $od) {
             $total += $od->qty * $od->harga;

@@ -48,7 +48,7 @@ class PelangganController extends Controller
         $pelanggan->update($request->all());
 
         return redirect()->route('pelanggan.index')
-        ->with('updated','Data Pelanggan Beerhasil Diubah');
+        ->with('updated','Data Pelanggan Berhasil Diubah');
     }
     public function show(Pelanggan $pelanggan):View
     {

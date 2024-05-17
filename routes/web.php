@@ -34,7 +34,7 @@ Route::resource('produk', ProdukController::class);
 
 Route::get('login', [LoginController::class, 'loginView'])->name('login');
 Route::post('login', [LoginController::class, 'authenticate']);
-Route::post('logout', [LoginController::class, 'loginView'])->name('auth.logout');
+Route::post('logout', [LoginController::class, 'logout'])->name('auth.logout')->middleware('auth');
 
 Route::get('penjualan', function () {
     return view('penjualan.index', [

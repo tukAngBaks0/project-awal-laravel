@@ -24,7 +24,7 @@
                         <tr>
                             <th>Pelanggan</th>
                             <th>:</th>
-                            <td>{{ $data->pelanggan->nama}}</td>
+                            <td>{{ $data->Pelanggan->nama}}</td>
                         </tr>
                         <tr>
                             <th>Tanggal</th>
