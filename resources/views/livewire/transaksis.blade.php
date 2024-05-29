@@ -24,7 +24,7 @@
                         <tr>
                             <th>Pelanggan</th>
                             <th>:</th>
-                            <td>{{ $data->Pelanggan->nama}}</td>
+                            <td>{{ $data->nama }}</td>
                         </tr>
                         <tr>
                             <th>Tanggal</th>
@@ -102,7 +102,7 @@
                             @foreach($dataDetiltransaksi as $dt)
                             <tr>
                                 <td>{{ $loop->iteration }}</td>
-                                <td>{{ $dt->produk->nama }}</td>
+                                <td>{{ $dt->nama }}</td>
                                 <td>@money($dt->harga)</td>
                                 <td>{{ $dt->qty}}</td>
                                 <td>@money($dt->harga * $dt->qty)</td>

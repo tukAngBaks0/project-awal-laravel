@@ -26,7 +26,7 @@
 
 <body>
 
-    <p>invoice:{{ $dataTransaksi->invoice}}<br>Pelanggan:{{ $dataTransaksi->pelanggan->nama}}<br>Cashier:{{ Auth::user()->name}}<br>Tanggal:{{$dataTransaksi->created_at->format('d M Y H:m')}}</p>
+    <p>invoice:{{ $dataTransaksi->invoice}}<br>Pelanggan:{{ $dataTransaksi->nama}}<br>Cashier:{{ Auth::user()->name}}<br>Tanggal:{{$dataTransaksi->created_at->format('d M Y H:m')}}</p>
     <table>
         <thead>
             <tr>
@@ -38,7 +38,7 @@
         </thead>
         @foreach($dataDetiltransaksi as $dod)
         <tr>
-            <td>{{ $dod->produk->nama }}</td>
+            <td>{{ $dod->nama }}</td>
             <td>{{$dod->qty}}</td>
             <td>@money($dod->harga)</td>
             <td>@money($dod->harga*$dod->qty)</td>
