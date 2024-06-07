@@ -137,6 +137,15 @@ with font-awesome or any other icon font library -->
                                 </p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="{{ route('laporan.index')}}" class="nav-link {{ ($title==='Laporan')?'active':''}}">
+                                <i class="nav-icon fas fa-file-pdf"></i>
+                                <p>
+                                    Laporan
+                                </p>
+                            </a>
+                        </li>
+
                         <!-- <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-table"></i>
